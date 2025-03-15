@@ -97,7 +97,7 @@ if st.session_state.show_question:
     if user_answer:
         st.session_state.user_answer = user_answer  
         if user_answer.lower() == st.session_state.country.lower():
-            st.success("Правильно! Вы угадали!")
+            st.success("Правильно! Вы угадали! Вот ссылка для второй главы: https://chapter-2.streamlit.app/")
         else:
             st.error(f"Неправильно. Попробуйте ещё раз")
         st.session_state.show_question = False  
